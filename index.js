@@ -1,5 +1,7 @@
-import { schedule } from "node-cron";
-import cors from 'cors'
+const { schedule } = require("node-cron");
+const cors = require('cors');
+const { DateTime } = require('luxon');
+const express = require('express');
 
 DateTime.local().setZone("America/Sao_Paulo");
 
