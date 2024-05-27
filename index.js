@@ -14,7 +14,7 @@ app.use(cors({
 }));
 
 schedule("*/5 * * * *", () => {
-    fetch('https://verlogsrender.onrender.com/', {
+    fetch(process.env.RENDER_URL, {
         method: "GET"
     })
 }, {
